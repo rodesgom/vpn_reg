@@ -19,9 +19,9 @@ try
 //regedit64
 //string user = Environment.UserName;
 RegistryKey localKey = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, RegistryView.Registry64);
-localKey = localKey.CreateSubKey(@"SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\Tecnisa S.A");
-localKey.SetValue("Description", "VPN"); localKey.SetValue("Server", "186.225.113.253:10443");
-localKey.SetValue("DATA1", "DigiteUsuarioDeRede");
+localKey = localKey.CreateSubKey(@"SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\test");
+localKey.SetValue("Description", "VPN"); localKey.SetValue("Server", "xxx.xxx.xxx.xxx:10443");
+localKey.SetValue("DATA1", "UserID");
 //localKey.SetValue("DATA1", "" + user);
 localKey.SetValue("ServerCert", "0");
 localKey.Close();
